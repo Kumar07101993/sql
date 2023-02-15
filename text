@@ -1,0 +1,161 @@
+-- Online SQL Editor to Run SQL Online.-- Use the editor to create new tables, insert data and all other SQL operations.  SELECT customer_id FROM Customers;
+-- Online SQL Editor to Run SQL Online.-- Use the editor to create new tables, insert data and all other SQL operations.  SELECT customer_id , first_name FROM Customers;
+-- Online SQL Editor to Run SQL Online.-- Use the editor to create new tables, insert data and all other SQL operations.  SELECT customer_id , first_name , age FROM Customers;
+-- Online SQL Editor to Run SQL Online.-- Use the editor to create new tables, insert data and all other SQL operations.  SELECT customer_id , first_name , age , country FROM Customers;
+Customers
+customer_id	      first_name    	last_name  	age    country
+1                	John	            Doe	       31	      USA
+2	                Robert            Luna	     22	      USA
+3                 david             Robinson   22	      UK
+4               	John	            Reinhardt  	25	    UK
+5               	Betty            	Doe        	28	    UAE
+
+order_id	       item	          amount     	customer_id
+1	               Keyboard	      400	         4
+2	               Mouse	        300	         4
+3	               Monitor      	12000	       3
+4                Keyboard	      400	         1
+5	               Mousepad     	250	         2
+-- Online SQL Editor to Run SQL Online.-- Use the editor to create new tables, insert data and all other SQL operations.  SELECT item FROM orders;
+Orders
+item	          
+Keyboard	      
+ Mouse	        
+ Monitor      	
+Keyboard	      
+Mousepad     	  
+-- Online SQL Editor to Run SQL Online.-- Use the editor to create new tables, insert data and all other SQL operations.  SELECT item , customer_id FROM orders;
+Orders
+item     	customer_id
+Keyboard   	4
+Mouse	      4
+Monitor   	3
+Keyboard  	1
+Mousepad  	2
+-- Online SQL Editor to Run SQL Online.-- Use the editor to create new tables, insert data and all other SQL operations.  SELECT item , status , first_name  FROM orders , shippings , customers ;
+item	status	first_name
+Keyboard	Pending	John
+Keyboard	Pending	Robert
+Keyboard	Pending	David
+Keyboard	Pending	John
+Keyboard	Pending	Betty
+Keyboard	Pending	John
+Keyboard	Pending	Robert
+Keyboard	Pending	David
+Keyboard	Pending	John
+Keyboard	Pending	Betty
+Keyboard	Delivered	John
+Keyboard	Delivered	Robert
+Keyboard	Delivered	David
+Keyboard	Delivered	John
+Keyboard	Delivered	Betty
+Keyboard	Pending	John
+Keyboard	Pending	Robert
+Keyboard	Pending	David
+Keyboard	Pending	John
+Keyboard	Pending	Betty
+Keyboard	Delivered	John
+Keyboard	Delivered	Robert
+Keyboard	Delivered	David
+Keyboard	Delivered	John
+Keyboard	Delivered	Betty
+Mouse	Pending	John
+Mouse	Pending	Robert
+Mouse	Pending	David
+Mouse	Pending	John
+Mouse	Pending	Betty
+Mouse	Pending	John
+Mouse	Pending	Robert
+Mouse	Pending	David
+Mouse	Pending	John
+Mouse	Pending	Betty
+Mouse	Delivered	John
+Mouse	Delivered	Robert
+Mouse	Delivered	David
+Mouse	Delivered	John
+Mouse	Delivered	Betty
+Mouse	Pending	John
+Mouse	Pending	Robert
+Mouse	Pending	David
+Mouse	Pending	John
+Mouse	Pending	Betty
+Mouse	Delivered	John
+Mouse	Delivered	Robert
+Mouse	Delivered	David
+Mouse	Delivered	John
+Mouse	Delivered	Betty
+Monitor	Pending	John
+Monitor	Pending	Robert
+Monitor	Pending	David
+Monitor	Pending	John
+Monitor	Pending	Betty
+Monitor	Pending	John
+Monitor	Pending	Robert
+Monitor	Pending	David
+Monitor	Pending	John
+Monitor	Pending	Betty
+Monitor	Delivered	John
+Monitor	Delivered	Robert
+Monitor	Delivered	David
+Monitor	Delivered	John
+Monitor	Delivered	Betty
+Monitor	Pending	John
+Monitor	Pending	Robert
+Monitor	Pending	David
+Monitor	Pending	John
+Monitor	Pending	Betty
+Monitor	Delivered	John
+Monitor	Delivered	Robert
+Monitor	Delivered	David
+Monitor	Delivered	John
+Monitor	Delivered	Betty
+Keyboard	Pending	John
+Keyboard	Pending	Robert
+Keyboard	Pending	David
+Keyboard	Pending	John
+Keyboard	Pending	Betty
+Keyboard	Pending	John
+Keyboard	Pending	Robert
+Keyboard	Pending	David
+Keyboard	Pending	John
+Keyboard	Pending	Betty
+Keyboard	Delivered	John
+Keyboard	Delivered	Robert
+Keyboard	Delivered	David
+Keyboard	Delivered	John
+Keyboard	Delivered	Betty
+Keyboard	Pending	John
+Keyboard	Pending	Robert
+Keyboard	Pending	David
+Keyboard	Pending	John
+Keyboard	Pending	Betty
+Keyboard	Delivered	John
+Keyboard	Delivered	Robert
+Keyboard	Delivered	David
+Keyboard	Delivered	John
+Keyboard	Delivered	Betty
+Mousepad	Pending	John
+Mousepad	Pending	Robert
+Mousepad	Pending	David
+Mousepad	Pending	John
+Mousepad	Pending	Betty
+Mousepad	Pending	John
+Mousepad	Pending	Robert
+Mousepad	Pending	David
+Mousepad	Pending	John
+Mousepad	Pending	Betty
+Mousepad	Delivered	John
+Mousepad	Delivered	Robert
+Mousepad	Delivered	David
+Mousepad	Delivered	John
+Mousepad	Delivered	Betty
+Mousepad	Pending	John
+Mousepad	Pending	Robert
+Mousepad	Pending	David
+Mousepad	Pending	John
+Mousepad	Pending	Betty
+Mousepad	Delivered	John
+Mousepad	Delivered	Robert
+Mousepad	Delivered	David
+Mousepad	Delivered	John
+Mousepad	Delivered	Betty
